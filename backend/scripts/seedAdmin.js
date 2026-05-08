@@ -6,9 +6,7 @@ dotenv.config();
 
 const seedAdmin = async () => {
     try {
-        const adminEmail = "aipgs@gmail.com";
-        const adminPassword = "Aipgs@0911";
-        const adminName = "System Admin";
+ 
 
         const AdminModel = getUserModel('admin');
         const existingAdmin = await AdminModel.findOne({ email: adminEmail });
